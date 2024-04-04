@@ -65,9 +65,13 @@ body {
   border-bottom-right-radius: 6px;
   color: #fff;
   font-size: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+.row button:hover {
+  background-color: #3f72af;
 }
 #listContainer {
-  margin: 1rem 0 3rem 0;
+  margin: 1rem 0 2rem 0;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -114,9 +118,25 @@ ul li span {
   text-align: center;
   border-radius: 50%;
   color: #000000;
+  transition: ul, li, span, 0.4s ease;
 }
 ul li span:hover {
   color: #fff;
   background: #a7a7a7;
   cursor: pointer;
+}
+#deleteAll {
+  width: 35px;
+  height: 40px;
+  background-image: url(./trash-black.png);
+  background-position: center;
+  background-size: contain;
+  border: none;
+  background-color: transparent;
+  margin-bottom: 0.7rem;
+  cursor: pointer;
+  transition: background-image 0.3s ease;
+}
+#deleteAll:hover {
+  background-image: url(./trash-red.png);
 }
