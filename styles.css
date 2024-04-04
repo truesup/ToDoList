@@ -12,7 +12,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateY(-200px);
+  /* transform: translateY(-200px); */
 }
 .container {
   background-color: #f9f7f7;
@@ -135,8 +135,11 @@ ul li span:hover {
   background-color: transparent;
   margin-bottom: 0.7rem;
   cursor: pointer;
-  transition: background-image 0.3s ease;
+  transition: background-image 0.2s ease;
 }
 #deleteAll:hover {
   background-image: url(./trash-red.png);
+}
+.notVisible {
+  display: none;
 }
